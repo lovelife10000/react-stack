@@ -1,13 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import routes from "src/routes/routes";
-import {Provider} from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'react-router-redux'
+import { Provider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
+import configureStore from '../src/store/configureStore'
+import createDevTools from './createDevtools'
 import { renderRoutes } from 'react-router-config'
-import configureStore from "../../L-react-app-admin/app/store/configureStore";
+
+
+
+
+import routes from '../src/routes/routes'
+
 const history = createHistory()
+const initialState = window.__INITIAL_STATE__
 const store = configureStore(initialState, history)
+createDevTools(store)
 
 ReactDOM.render(
     <Provider store={store}>
@@ -16,4 +24,4 @@ ReactDOM.render(
         </ConnectedRouter>
     </Provider>,
     document.getElementById('root')
-);
+)

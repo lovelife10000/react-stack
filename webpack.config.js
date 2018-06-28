@@ -11,7 +11,7 @@ const config = {
     devtool: "source-map",
     entry: {
         vendor: Object.keys(package.dependencies),
-        bundle: ['babel-polyfill',"./js/index.js"]
+        bundle: ['babel-polyfill',"./client/client.js"]
     },
 
     output: {
@@ -32,7 +32,7 @@ const config = {
         new HtmlWebpackPlugin({
 
             title: '',
-            template: path.join(__dirname, './index.html'), // 模板文件
+            template: path.join(__dirname, './src/assets/index.html'), // 模板文件
             inject: 'body',
             hash: false, // 为静态资源生成hash值
             minify: { // 压缩HTML文件
