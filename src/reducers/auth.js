@@ -1,4 +1,4 @@
-import {getCookie} from 'utils/auth'
+import {getCookie} from 'src/utils/auth'
 import {createReducer} from 'redux-immutablejs'
 import {fromJS} from 'immutable'
 import appConfig from 'src/config/app'

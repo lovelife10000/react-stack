@@ -1,4 +1,4 @@
-import request from 'utils/request'
+import request from 'src/utils/request'
 
 export const localLogin = function (data) {
   return request['post']('admin/auth/local', data)

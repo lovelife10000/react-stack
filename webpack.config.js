@@ -14,6 +14,7 @@ const config = {
         bundle: ['babel-polyfill',"./client/client.js"]
     },
 
+
     output: {
 
         path: path.resolve(__dirname, "dist"),
@@ -149,7 +150,7 @@ const config = {
     resolve:{
         extensions: ['.js', '.jsx', '.sass', '.css', '.png'],
         alias:{
-            src: path.resolve(__dirname, '../src'),
+            src: path.resolve(__dirname, 'src'),
         }
     }
 
