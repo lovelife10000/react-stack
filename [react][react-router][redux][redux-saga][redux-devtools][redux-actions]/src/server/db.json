@@ -1,0 +1,22 @@
+{
+  "data": {
+    "pageSize": 1,
+    "currentPage": 2,
+    "totalPages": 100,
+    "totalRows": 1,
+    "data": [
+      {
+        "id": 111,
+        "module": "aaaaaaaaaaaa",
+        "code": "bbbbbbbbb",
+        "name": "cccccccc",
+        "visible": 1,
+        "visibleCnt": "66",
+        "remark": "备注信息",
+        "createTime": "shijian",
+        "updateTime": "shijian2"
+      }
+    ]
+  },
+  "status":true
+}
